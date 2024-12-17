@@ -1,14 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9; /* Warna latar belakang yang lebih lembut */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Warna hijau */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0; /* Padding lebih besar untuk header */
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0; /* Margin untuk jarak antara judul dan menu */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px; /* Jarak antar item menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks putih untuk tautan */
+    font-weight: bold; /* Teks tebal untuk tautan */
+    transition: color 0.3s; /* Transisi halus untuk efek hover */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Warna emas saat hover */
 }
 
 #product-list {
@@ -20,15 +44,27 @@ header {
 
 .product {
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
+    border-radius: 10px; /* Sudut lebih bulat */
+    margin: 15px; /* Jarak antar produk */
+    padding: 15px; /* Padding lebih besar untuk produk */
+    width: 220px; /* Lebar produk */
     text-align: center;
+    background-color: white; /* Latar belakang putih untuk produk */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk efek hover */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0; /* Padding lebih besar untuk footer */
     background-color: #f1f1f1;
+    position: relative; /* Memastikan footer tetap di bawah */
+    bottom: 0;
+    width: 100%; /* Memastikan footer memenuhi lebar halaman */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk footer */
 }
