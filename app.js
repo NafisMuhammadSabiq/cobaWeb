@@ -1,7 +1,9 @@
 const products = [
-    { id: 1, name: "Produk 1", price: 10000 },
-    { id: 2, name: "Produk 2", price: 20000 },
-    { id: 3, name: "Produk 3", price: 30000 },
+    { id: 1, name: "Sugali Alpha", price: 1.500.000 },
+    { id: 2, name: "Mandala Gm", price: 2.000.000 },
+    { id: 3, name: "Sasuke jetli", price: 2.000.000 },
+    { id: 4, name: "Sugali", price: 1.500.000 },
+    { id: 5, name: "Petir Alpha", price: 1.500.000 },
 ];
 
 function displayProducts() {
