@@ -119,3 +119,28 @@ footer {
     padding: 15px 0; /* Padding untuk footer */
     background-color: #3e8e41; /* Warna hijau untuk footer */
    
+ul {
+    list-style-type: none; /* Menghilangkan bullet pada list */
+    padding: 0; /* Menghilangkan padding */
+}
+
+ul li {
+    margin: 5px 0; /* Jarak antar item list */
+}
+
+ul li a {
+    color: #3e8e41; /* Warna hijau untuk tautan media sosial */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 1.2em; /* Ukuran font untuk tautan */
+    display: flex; /* Menggunakan flexbox untuk menyelaraskan ikon dan teks */
+    align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
+}
+
+ul li a i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    font-size: 1.5em; /* Ukuran ikon */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
