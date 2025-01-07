@@ -67,4 +67,55 @@ main {
 }
 
 section {
-    background-color:
+    background-color: white; /* Latar belakang putih untuk setiap section */
+    border-radius: 10px; /* Sudut lebih bulat */
+    padding: 20px; /* Padding untuk section */
+    margin-bottom: 20px; /* Jarak antar section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+h2 {
+    color: #3e8e41; /* Warna hijau untuk judul section */
+    margin-bottom: 15px; /* Jarak bawah untuk judul */
+    font-size: 1.8em; /* Ukuran font lebih besar untuk judul */
+}
+
+img {
+    display: block; /* Menghilangkan jarak bawah pada gambar */
+    margin: 0 auto 15px; /* Margin untuk gambar */
+    border-radius: 10px; /* Sudut lebih bulat untuk gambar */
+    transition: transform 0.3s; /* Transisi untuk efek zoom */
+}
+
+img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover pada gambar */
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 220px; /* Lebar produk sedikit lebih besar */
+    text-align: center;
+    background-color: #f9f9f9; /* Latar belakang produk */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk efek hover */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0; /* Padding untuk footer */
+    background-color: #3e8e41; /* Warna hijau untuk footer */
+   
