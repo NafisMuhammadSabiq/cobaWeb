@@ -6,17 +6,17 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Warna latar belakang yang lembut */
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto dari Google Fonts */
+    background-color: #eaeaea; /* Warna latar belakang yang lebih cerah */
     line-height: 1.6; /* Jarak antar baris */
 }
 
 header {
-    background-color: #4CAF50; /* Warna hijau */
+    background-color: #3e8e41; /* Warna hijau yang lebih gelap */
     color: white;
     padding: 20px 0; /* Padding untuk header */
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek kedalaman */
 }
 
 nav ul {
@@ -34,11 +34,12 @@ nav ul li a {
     text-decoration: none;
     color: white; /* Warna teks putih untuk tautan */
     font-weight: bold; /* Teks tebal untuk tautan */
-    transition: color 0.3s; /* Transisi halus untuk efek hover */
+    transition: color 0.3s, transform 0.3s; /* Transisi halus untuk efek hover */
 }
 
 nav ul li a:hover {
     color: #FFD700; /* Warna emas saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
 }
 
 main {
@@ -47,21 +48,27 @@ main {
 
 section {
     background-color: white; /* Latar belakang putih untuk setiap section */
-    border-radius: 8px; /* Sudut lebih bulat */
+    border-radius: 10px; /* Sudut lebih bulat */
     padding: 20px; /* Padding untuk section */
     margin-bottom: 20px; /* Jarak antar section */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
 }
 
 h2 {
-    color: #4CAF50; /* Warna hijau untuk judul section */
+    color: #3e8e41; /* Warna hijau untuk judul section */
     margin-bottom: 15px; /* Jarak bawah untuk judul */
+    font-size: 1.8em; /* Ukuran font lebih besar untuk judul */
 }
 
 img {
     display: block; /* Menghilangkan jarak bawah pada gambar */
     margin: 0 auto 15px; /* Margin untuk gambar */
-    border-radius: 8px; /* Sudut lebih bulat untuk gambar */
+    border-radius: 10px; /* Sudut lebih bulat untuk gambar */
+    transition: transform 0.3s; /* Transisi untuk efek zoom */
+}
+
+img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover pada gambar */
 }
 
 #product-list {
@@ -72,46 +79,23 @@ img {
 
 .product {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    width: 200px;
+    width: 220px; /* Lebar produk sedikit lebih besar */
     text-align: center;
     background-color: #f9f9f9; /* Latar belakang produk */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
     transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk efek hover */
 }
 
 .product:hover {
     transform: translateY(-5px); /* Efek angkat saat hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
 }
 
 footer {
     text-align: center;
     padding: 15px 0; /* Padding untuk footer */
-    background-color: #4CAF50; /* Warna hijau untuk footer */
-    color: white; /* Warna teks putih untuk footer */
-    position: relative; /* Memastikan footer tetap di bawah */
-    bottom: 0;
-    width: 100%; /* Memastikan footer memenuhi lebar halaman */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk footer */
-}
-
-ul {
-    list-style-type: none; /* Menghilangkan bullet pada list */
-    padding: 0; /* Menghilangkan padding */
-}
-
-ul li {
-    margin: 5px 0; /* Jarak antar item list */
-}
-
-ul li a {
-    color: #4CAF50; /* Warna hijau untuk tautan media sosial */
-    text-decoration: none; /* Menghilangkan garis bawah */
-}
-
-ul li a:hover {
-    text-decoration: underline; /* Garis bawah saat hover */
-}
+    background-color: #3e8e41; /* Warna hijau untuk footer */
+   
